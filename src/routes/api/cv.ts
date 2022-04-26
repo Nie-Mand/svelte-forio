@@ -1,8 +1,4 @@
 export async function get() {
-	return {
-		status: 200,
-		body: {
-			message: 'Hello, World!'
-		}
-	}
+	// redirect to the cv page
+	return {}
 }

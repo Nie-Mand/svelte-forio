@@ -19,10 +19,10 @@
 	<Logo />
 
 	<NavLinks>
-		<NavLink>WHO AM I</NavLink>
-		<NavLink>WORK</NavLink>
-		<NavLink>NON TECH ME</NavLink>
-		<NavLink>CONTACT</NavLink>
+		<NavLink to="/whoami">WHO AM I</NavLink>
+		<NavLink to="/work">WORK</NavLink>
+		<NavLink to="/nontechme">NON TECH ME</NavLink>
+		<NavLink to="/contact">CONTACT</NavLink>
 	</NavLinks>
 
 	<SocialMedia />

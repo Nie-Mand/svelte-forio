@@ -1,4 +1,4 @@
-<div class="text-white ">
+<div class="text-white" id="#whoami">
 	<h1 class="font-black text-2xl ">WHO AM I</h1>
 
 	<div class="h-10" />
