@@ -1,0 +1,41 @@
+<script lang="ts">
+	import { openMenu } from '$lib/utils/menu'
+	import { NavLinks, NavLink, Logo, Nav } from '$lib/design'
+	import SocialMedia from './design/SocialMedia.svelte'
+
+	let open = false
+	let rightView = true
+	let menuIconClass = ''
+
+	function handleMenuOpen() {
+		const reassined = openMenu(open, rightView)
+		open = reassined.open
+		menuIconClass = reassined.menuIconClass
+		rightView = reassined.rightView
+	}
+</script>
+
+<Nav>
+	<Logo />
+
+	<NavLinks>
+		<NavLink>WHO AM I</NavLink>
+		<NavLink>WORK</NavLink>
+		<NavLink>NON TECH ME</NavLink>
+		<NavLink>CONTACT</NavLink>
+	</NavLinks>
+
+	<SocialMedia />
+
+	<button class="block md:hidden focus:outline-none" on:click={handleMenuOpen}>
+		<img src="/icons/menu.svg" alt="Menu" class={menuIconClass} />
+	</button>
+</Nav>
+
+{#if open}
+	<menu
+		class="duration-200 backdrop-blur-xl bg-black/80 fixed inset-0 z-20 grid  font-medium text-xs  items-center gap-x-4 text-white"
+	>
+		TODO
+	</menu>
+{/if}
