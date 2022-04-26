@@ -4,7 +4,7 @@
 	import Twitter from '$lib/icons/Twitter.svelte'
 </script>
 
-<div class="hidden md:flex items-center gap-x-6">
+<div class="flex md:hidden items-center gap-x-6">
 	<a href="https://github.com/Nie-Mand/" rel="noreferrer noopener" target="_blank">
 		<GitHub />
 	</a>

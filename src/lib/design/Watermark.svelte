@@ -1,13 +1,12 @@
 <script lang="ts">
 	import makeId from 'locally-unique-id-generator'
-
 	let id = makeId()
 </script>
 
-<svg width="450">
+<svg width="450" height="120">
 	<defs>
 		<clipPath {id}>
-			<text x="50" y="133" class="font-black uppercase text-[100px] m-0 leading-3">
+			<text x="30" y="110" class="font-black uppercase text-[100px] m-0 leading-3">
 				<slot />
 			</text>
 		</clipPath>
@@ -15,7 +14,7 @@
 
 	<g clip-path={`url(#${id})`}>
 		<g filter="url(#filter0_bi_34_7)">
-			<rect width="529" height="192" fill="white" fill-opacity="0.5" />
+			<rect width="450" height="160" fill="white" fill-opacity="0.5" />
 		</g>
 		<defs>
 			<filter

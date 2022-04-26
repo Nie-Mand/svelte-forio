@@ -5,6 +5,9 @@ module.exports = {
 			main: ['Montserrat', 'sans-serif']
 		},
 		extend: {
+			screens: {
+				500: '500px'
+			},
 			rotate: {
 				'pi/2': '90deg',
 				pi: '180deg',

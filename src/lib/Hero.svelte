@@ -1,5 +1,4 @@
 <script>
-	import Button from './design/Button.svelte'
 	import Watermark from './design/Watermark.svelte'
 	import WhoAmI from './WhoAmI.svelte'
 </script>
@@ -24,7 +23,7 @@
 					<Watermark>House</Watermark>
 				</div>
 
-				<div class="h-20" />
+				<div class="h-10" />
 				<div class="flex flex-col md:flex-row items-center gap-4 md:gap-14 justify-center">
 					<a
 						href="/work"
@@ -34,8 +33,9 @@
 					</a>
 
 					<a
+						rel="noreferrer noopener"
+						target="_blank"
 						href="/cv.pdf"
-						download="cv.pdf"
 						class="hover:shadow-inner hover:shadow-white/50 font-light hover:font-bold duration-500 text-xs text-white border-2 border-white w-32 py-2.5 box-border"
 					>
 						RESUME
@@ -55,22 +55,39 @@
 		</div>
 
 		<div
-			class="min-h-screen bg-black/90 backdrop-blur-xl px-4 md:px-20 lg:px-40 grid lg:flex items-center justify-between"
+			class="min-h-screen bg-black/90 backdrop-blur-xl px-4 md:px-20 lg:px-40 grid 500:flex items-center justify-between"
 		>
 			<WhoAmI />
 
 			<div
 				class="flex flex-col md:flex-row lg:flex-col justify-center lg:justify-start items-center gap-10"
 			>
-				<button class="text-xs text-black  bg-white/80 backdrop-blur-3xl w-48 py-3">
+				<a
+					rel="noreferrer noopener"
+					target="_blank"
+					href="https://github.com/Nie-Mand"
+					class=" text-xs text-black  bg-white/80 hover:bg-white/100 duration-500 backdrop-blur-3xl w-48 grid place-content-center py-3"
+				>
 					MY GITHUB PROFILE
-				</button>
+				</a>
 
-				<button class="text-xs text-white border-2 border-white w-48 py-2.5 box-border">
+				<a
+					rel="noreferrer noopener"
+					target="_blank"
+					href="https://www.linkedin.com/in/nie-mand/"
+					class="hover:shadow-inner hover:shadow-white/50 font-light hover:font-bold duration-500 text-xs text-white border-2 border-white w-48 grid place-content-center py-2.5 box-border"
+				>
 					MY LINKEDIN PROFILE
-				</button>
+				</a>
 
-				<button class="text-xs text-white border-white w-48"> MY RESUME </button>
+				<a
+					rel="noreferrer noopener"
+					target="_blank"
+					href="/cv.pdf"
+					class="font-light hover:font-bold duration-500 text-xs text-white border-white w-48 grid place-content-center"
+				>
+					MY RESUME
+				</a>
 			</div>
 		</div>
 	</div>

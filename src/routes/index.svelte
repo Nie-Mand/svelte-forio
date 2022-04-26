@@ -2,6 +2,7 @@
 	import Contact from '$lib/Contact.svelte'
 	import Hero from '$lib/Hero.svelte'
 	import Skills from '$lib/Skills.svelte'
+	import Work from '$lib/Work.svelte'
 </script>
 
 <svelte:head>
@@ -9,8 +10,6 @@
 </svelte:head>
 
 <Hero />
-
-work
-
+<Work />
 <Skills />
 <Contact />

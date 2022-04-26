@@ -19,7 +19,7 @@
 	}
 </script>
 
-<div class="py-40 px-4 md:px-20 lg:px-40">
+<div class="pt-40 pb-20 px-4 md:px-20 lg:px-40">
 	<h1 class="text-2xl font-black text-center">CONTACT ME</h1>
 
 	<form class="grid grid-cols-2 gap-10 py-10" on:submit|preventDefault={onSubmit}>
